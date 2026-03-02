@@ -42,6 +42,8 @@ https://msearch.gsi.go.jp/address-search/AddressSearch?q=[検索文字列]
 - [国土地理院コンテンツ利用規約](https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html)
 - [国土地理院APIで住所から緯度・経度を取得(ジオコーディング) - Elsaの技術日記(徒然なるままに)](https://elsammit-beginnerblg.hatenablog.com/entry/2021/07/11/122916)
 
+---
+
 ### CSIS : 東京大学空間情報科学研究センター API
 
 #### CSIS : リクエストURL
