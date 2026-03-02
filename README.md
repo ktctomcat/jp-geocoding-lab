@@ -174,7 +174,7 @@ https://www.geocoding.jp/api/?q=住所やランドマーク名称など
 XML
 https://map.yahooapis.jp/geocode/V1/geoCoder
 
-JSONP
+JSON
 https://map.yahooapis.jp/geocode/V1/geoCoder
 ```
 
