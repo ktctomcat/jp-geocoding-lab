@@ -6,7 +6,8 @@
 
 ## 準備
 
-APIの仕様で、レスポンスがXMLのものとJSONのものがあります。XMLはxmltodictを使用しています。
+基本的に全てのスクリプトで、requestsを使用しています。  
+また、APIの仕様上レスポンスがXMLのものとJSONのものがあり、XMLのとのはxmltodictを使用しています。
 
 ## 使い方
 
