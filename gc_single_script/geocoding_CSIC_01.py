@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Copyright (c) 2026 Tomoo Ito
+# Licensed under the MIT License. See the LICENSE file in the project root.
+
+"""
+このスクリプトの目的や背景を簡潔に書く。
+"""
+
 import requests
 import xmltodict
 
