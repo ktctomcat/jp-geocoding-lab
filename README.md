@@ -11,7 +11,8 @@
 
 ## 使い方
 
-[gc_single_script](https://github.com/ktctomcat/jp-geocoding-lab/tree/main/gc_single_script)中にあるファイルは単体で動くテスト用のスクリプトです。ジオコードしたい住所等を直接スクリプト内で記述し実行させてください。レスポンスの内容を表示します。
+[gc_single_script](https://github.com/ktctomcat/jp-geocoding-lab/tree/main/gc_single_script)中にあるファイルは単体で動くテスト用のスクリプトです。  
+ジオコードしたい住所等を直接スクリプト内で記述し実行させてください。レスポンスの内容を表示します。
 
 [gc_class](https://github.com/ktctomcat/jp-geocoding-lab/tree/main/gc_class)の中のファイルは調べたい住所等から緯度・経度と住所だけを抜き出してリストとして得るためのクラスで、geocoding.pyがインポートして使う仕組みになっています。  
 geocoding.pyの中に、ジオコードしたい住所等を記述して実行させると、APIごとの結果の違いを確認することが出来ます。
