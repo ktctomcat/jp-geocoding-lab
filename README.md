@@ -226,7 +226,7 @@ https://map.yahooapis.jp/geocode/V1/geoCoder
 
 [Yahoo!ジオコーダAPI](https://developer.yahoo.co.jp/webapi/map/openlocalplatform/v1/geocoder.html)
 
-# Lisence
+## Lisence
 
 This project is licensed under the MIT License, see the LICENSE.txt file for details
 
