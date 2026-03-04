@@ -225,3 +225,8 @@ https://map.yahooapis.jp/geocode/V1/geoCoder
 #### YHOO : 参考サイト
 
 [Yahoo!ジオコーダAPI](https://developer.yahoo.co.jp/webapi/map/openlocalplatform/v1/geocoder.html)
+
+# Lisence
+
+This project is licensed under the MIT License, see the LICENSE.txt file for details
+
