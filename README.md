@@ -228,5 +228,5 @@ https://map.yahooapis.jp/geocode/V1/geoCoder
 
 ## Lisence
 
-This project is licensed under the MIT License, see the LICENSE.txt file for details
+This project is licensed under the MIT License, see the [LICENSE.txt](https://github.com/ktctomcat/jp-geocoding-lab/blob/main/LICENSE.txt) file for details
 
