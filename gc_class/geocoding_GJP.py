@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Copyright (c) 2026 Tomoo Ito
+# Licensed under the MIT License. See the LICENSE file in the project root.
 
 from typing import Optional
 
@@ -64,7 +68,8 @@ class GJPClient:
             lat = safe_float(raw_lat)
 
             # 住所を取得：候補内に住所があればそれ、なければ共通の住所を使う
-            address = candidate.get("google_maps") or candidate.get("address") or base_address
+            address = candidate.get("google_maps") or candidate.get(
+                "address") or base_address
 
             # 住所、緯度、経度を候補リストに追加
             candidate_list.append({

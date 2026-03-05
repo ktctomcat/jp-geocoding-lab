@@ -1,7 +1,15 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Copyright (c) 2026 Tomoo Ito
+# Licensed under the MIT License. See the LICENSE file in the project root.
+
+"""
+OpenStreetMap（OSM） Nominatim APIを使用して住所から緯度経度を取得するサンプルコード
+リスト形式、エラー対策なし
+"""
+
 import requests
 
-# OpenStreetMap（OSM） Nominatim APIを使用して住所から緯度経度を取得するサンプルコード
-# リスト形式、エラー対策なし
 BASE_URL = 'https://nominatim.openstreetmap.org/search'
 address = "北区役所"
 

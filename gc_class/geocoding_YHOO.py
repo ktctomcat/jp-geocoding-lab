@@ -1,4 +1,7 @@
-
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Copyright (c) 2026 Tomoo Ito
+# Licensed under the MIT License. See the LICENSE file in the project root.
 
 from typing import Optional
 
@@ -7,14 +10,13 @@ import requests
 # 独自モジュール
 from .utils import safe_float
 
-# User-Agentの設定は必須ではないが、API利用規約に従い設定することを推奨
-# Yahoo!ジオコーダ API は JSON を返が、そのトップレベルは 辞書（dict）
-
 
 class YHOOClient:
     """
     Yahoo!ジオコーダ API クライアント
     requests.get() を使用し、全候補をリストで返す
+    User-Agentの設定は必須ではないが、API利用規約に従い設定することを推奨
+    Yahoo!ジオコーダ API は JSON を返が、そのトップレベルは 辞書（dict）
     """
     BASE_URL = 'https://map.yahooapis.jp/geocode/V1/geoCoder'
     CLIENT_ID = "<あなたのClient ID（アプリケーションID）>"
@@ -34,7 +36,8 @@ class YHOOClient:
             'User-Agent': 'JP-Multi-Source-Geocoder-QGIS-Plugin/1.0'
         }
         try:
-            response = requests.get(self.BASE_URL, params=params, headers=headers, timeout=5)
+            response = requests.get(
+                self.BASE_URL, params=params, headers=headers, timeout=5)
             response.raise_for_status()
         except Exception:
             return None

@@ -3,11 +3,14 @@
 # Copyright (c) 2026 Tomoo Ito
 # Licensed under the MIT License. See the LICENSE file in the project root.
 
+"""
+CSICのジオコーディングAPIを使用して住所から緯度経度を取得するサンプルコード
+リスト形式、エラー対策なし
+"""
+
 import requests
 import xmltodict
 
-# CSICのジオコーディングAPIを使用して住所から緯度経度を取得するサンプルコード
-# リスト形式、エラー対策なし
 BASE_URL = "https://geocode.csis.u-tokyo.ac.jp/cgi-bin/simple_geocode.cgi"
 address = "南区役所"
 

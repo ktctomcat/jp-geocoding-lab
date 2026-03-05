@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Copyright (c) 2026 Tomoo Ito
+# Licensed under the MIT License. See the LICENSE file in the project root.
+
 from typing import Optional
 
 import requests
@@ -27,7 +32,8 @@ class OSMClient:
 
         try:
             # APIリクエスト
-            response = requests.get(self.BASE_URL, params=params, headers=headers, timeout=5)
+            response = requests.get(
+                self.BASE_URL, params=params, headers=headers, timeout=5)
             response.raise_for_status()
         except Exception:
             return None

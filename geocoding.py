@@ -1,8 +1,13 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Copyright (c) 2026 Tomoo Ito
+# Licensed under the MIT License. See the LICENSE file in the project root.
+
 from gc_class import (geocoding_CSIS, geocoding_GJP, geocoding_GSI,
                       geocoding_OSM, geocoding_YHOO)
 
+# ジオコーディングのテストコード
 address = "新潟市西蒲区"
-
 
 # 東京大学 空間情報科学研究センター クライアントを叩く
 gc = geocoding_CSIS.CSISClient()
