@@ -2,8 +2,8 @@
 
 ## 概要
 
-このリポジトリは日本国内で利用出来るジオコーディングAPIのうち、主に無料で利用出来るAPIのテスト用スクリプトが、保存されています。  
-ジオーコーディングAPIは色々なサイトで紹介されていますが、情報をまとめてみました。
+このリポジトリは日本国内で利用出来るジオコーディングAPIのうち、主に無料で利用出来るAPIのテスト用スクリプトが保存されています。  
+ジオーコーディングAPIは色々なサイトで紹介されていますので、情報をまとめてみました。
 
 ## 準備
 
@@ -230,4 +230,3 @@ https://map.yahooapis.jp/geocode/V1/geoCoder
 ## Lisence
 
 This project is licensed under the MIT License, see the [LICENSE.txt](https://github.com/ktctomcat/jp-geocoding-lab/blob/main/LICENSE.txt) file for details
-
