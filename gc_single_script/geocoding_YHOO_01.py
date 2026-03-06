@@ -10,9 +10,12 @@ JSON形式、エラー対策なし
 
 import requests
 
-BASE_URL = "https://map.yahooapis.jp/geocode/V1/geoCoder"
+# Yahoo!ジオコーダAPIのClient ID（アプリケーションID）と住所を設定
 CLIENT_ID = "<あなたのClient ID（アプリケーションID）>"
-address = "新潟市"
+place = "新潟市"
+
+# Yahoo!ジオコーダAPIのエンドポイントURL
+BASE_URL = "https://map.yahooapis.jp/geocode/V1/geoCoder"
 
 # APIリクエストのパラメータを設定
 params = {
@@ -21,7 +24,7 @@ params = {
     "ei": "UTF-8",
     "al": 4,
     "recursive": "true",
-    "query": address,
+    "query": place,
 }
 
 # APIリクエストを送信してレスポンスを取得

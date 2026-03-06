@@ -10,11 +10,16 @@
 
 import requests
 
+# ジオコーディングしたい住所を指定
+place = "北区役所"
+
+# 国土地理院 ジオコーディング APIのエンドポイントURL
 BASE_URL = "https://msearch.gsi.go.jp/address-search/AddressSearch"
-address = "北区役所"
 
 # APIリクエストのパラメータを設定
-params = {"q": address}
+params = {
+    "q": place
+}
 
 # APIリクエストを送信してレスポンスを取得
 response = requests.get(BASE_URL, params=params, timeout=5)

@@ -6,12 +6,12 @@
 from gc_class import (geocoding_CSIS, geocoding_GJP, geocoding_GSI,
                       geocoding_OSM, geocoding_YHOO)
 
-# ジオコーディングのテストコード
-address = "新潟市西蒲区"
+# ジオコーディングしたい住所等を指定
+place = "新潟市西蒲区"
 
 # 東京大学 空間情報科学研究センター クライアントを叩く
 gc = geocoding_CSIS.CSISClient()
-result_list = gc.search(address)
+result_list = gc.search(place)
 
 print()
 print("========= 東京大学 空間情報科学研究センター(CSIS) =========")
@@ -28,7 +28,7 @@ else:
 
 # 国土地理院 ジオコーディング クライアントを叩く
 gc = geocoding_GSI.GSIClient()
-result_list = gc.search(address)
+result_list = gc.search(place)
 
 print()
 print("========= 国土地理院(GSI) =========")
@@ -45,7 +45,7 @@ else:
 
 # Geocoding.jp ジオコーダー クライアントを叩く
 gc = geocoding_GJP.GJPClient()
-result_list = gc.search(address)
+result_list = gc.search(place)
 
 print()
 print("========= Geocoding.jp(GJP) =========")
@@ -62,7 +62,7 @@ else:
 
 # OpenStreetMap Nominatim クライアントを叩く
 gc = geocoding_OSM.OSMClient()
-result_list = gc.search(address)
+result_list = gc.search(place)
 
 print()
 print("========= OpenStreetMap Nominatim(OSM) =========")
@@ -79,7 +79,7 @@ else:
 
 # Yahoo!ジオコーダ クライアントを叩く
 gc = geocoding_YHOO.YHOOClient()
-result_list = gc.search(address)
+result_list = gc.search(place)
 
 print()
 print("========= Yahoo!ジオコーダ(YHOO) =========")

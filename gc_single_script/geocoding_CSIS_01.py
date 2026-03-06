@@ -11,11 +11,16 @@ XML形式、エラー対策なし
 import requests
 import xmltodict
 
+# ジオコーディングしたい住所等を指定
+place = "新潟市西蒲区番屋１７００"
+
+# 東京大学 空間情報科学研究センター Simple Geocode APIのエンドポイントURL
 BASE_URL = "https://geocode.csis.u-tokyo.ac.jp/cgi-bin/simple_geocode.cgi"
-address = "新潟市西蒲区番屋１７００"
 
 # パラメータ設定
-params = {"addr": address}
+params = {
+    "addr": place
+}
 
 # APIリクエストを送信してレスポンスを取得
 response = requests.get(BASE_URL, params=params, timeout=5)

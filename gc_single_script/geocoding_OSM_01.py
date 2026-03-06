@@ -10,12 +10,15 @@ JSON形式、エラー対策なし
 
 import requests
 
+# ジオコーディングしたい住所を指定
+place = "新潟市西蒲区番屋"
+
+# OSM Nominatim APIのエンドポイントURL
 BASE_URL = 'https://nominatim.openstreetmap.org/search'
-address = "新潟市西蒲区番屋"
 
 # APIリクエストのパラメータを設定
 params = {
-    "q": address,
+    "q": place,
     'format': 'json',
     'limit': 20  # 最大値は 50件 まで。
 }

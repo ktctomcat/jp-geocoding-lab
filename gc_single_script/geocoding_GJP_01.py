@@ -11,11 +11,16 @@ JSON形式、エラー対策なし
 import requests
 import xmltodict
 
-BASE_URL = 'https://www.geocoding.jp/api/'
-address = "新潟市西蒲区番屋1700"
+# ジオコーディングしたい住所を指定
+place = "新潟市西蒲区番屋1700"
+
+# Geocoding.jp ジオコーダー（GJP）APIのエンドポイントURL
+BASE_URL = "https://www.geocoding.jp/api/"
 
 # APIリクエストのパラメータを設定
-params = {"q": address}
+params = {
+    "q": place
+}
 
 # APIリクエストを送信してレスポンスを取得
 response = requests.get(BASE_URL, params=params, timeout=5)
